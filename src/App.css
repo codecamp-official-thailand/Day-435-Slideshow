@@ -1,5 +1,38 @@
 .App {
   text-align: center;
+  align-self: center;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.prev{
+  left: 0;
+}
+
+.next{
+  right: 0;
+}
+
+.prev, .next{
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
 }
 
 .App-logo {
@@ -35,4 +68,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Picture {
+  width: 800px;
 }
